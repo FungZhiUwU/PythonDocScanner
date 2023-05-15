@@ -5,7 +5,7 @@ import pytesseract as pt
 
 #Define the path of tesseract.exe
 # -----------------Remember to change the path of the tesseract.exe--------------------
-pt.pytesseract.tesseract_cmd=r"D:\\Programmer_Life\\Opencv\\tesseract.exe"
+pt.pytesseract.tesseract_cmd=r"Tesseract.exe location"
 
 #Define the size of the image
 heightImg = 640
@@ -32,8 +32,8 @@ def reorder(imgPoint):
 
 # Setup
 #-----------------Remember to change the path of the image and the File name and type-----------------
-imgLocation = "test_img.jpg" #Input the image name
-img = cv2.imread('D:\\Programmer_Life\\Opencv\\Assignement\\'+imgLocation)
+imgLocation = ".jpg" #Input the image name
+img = cv2.imread('Folder Location'+imgLocation)
 img = cv2.resize(img,(widthImg,heightImg),cv2.INTER_AREA)
 BW_img = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 Blur_img = cv2.GaussianBlur(BW_img, (5, 5), 1)
